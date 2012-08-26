@@ -1494,6 +1494,10 @@ class CF_Container
             $tmp->last_modified = $obj["last_modified"];
             $objects[] = $tmp;
           }
+          else
+          {
+            $objects[] = array('subdir' => $obj["subdir"]);
+          }          
         }
         return $objects;
     }
